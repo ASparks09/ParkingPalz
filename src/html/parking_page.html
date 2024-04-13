@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Parking</title>
+    <style>
+        table, th,td{
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+        th,td{
+        {% if taken_spot == "true"%}
+                table td#row1 {background-color: lightgray}
+            {% else %}
+                table td#row2 {background-color: darkgray}
+        }
+    </style>
 </head>
 <body>
 <img alt="Catalyst Parking Lot"
      height="400" src="Catalystmap.png" width="700">
 <table>
-    <tr>
+    <tr id="row1">
+        <td>{{table}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
+    </tr>
+    <tr id="row2">
         <td>{{}}</td>
         <td>{{}}</td>
         <td>{{}}</td>
@@ -31,7 +66,7 @@
         <td>{{}}</td>
         <td>{{}}</td>
     </tr>
-    <tr>
+    <tr id="row3">
         <td>{{}}</td>
         <td>{{}}</td>
         <td>{{}}</td>
@@ -54,30 +89,7 @@
         <td>{{}}</td>
         <td>{{}}</td>
     </tr>
-    <tr>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-        <td>{{}}</td>
-    </tr>
-    <tr>
+    <tr id="row4">
         <td>{{}}</td>
         <td>{{}}</td>
         <td>{{}}</td>
