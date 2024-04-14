@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_cors import CORS, cross_origin
+from flask import render_template
 
 app = Flask(__name__)
 CORS(app)
@@ -23,13 +24,13 @@ def table():
         tableData += row
             
 
-    return render_template('parking_page.html', table = tableData)
+    return render_template('parking_page.html', tableData)
 
 
 
 if __name__ == "__main__":''
     
-    app.run()
+app.run()
 
 
     
