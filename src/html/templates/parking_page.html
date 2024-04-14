@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking</title>
+
+</head>
+<body>
+<img alt="Catalyst Parking Lot"
+     height="400" src="Catalystmap.png" width="700"/>
+     
+<table>
+    {% for row in trial %}
+    <tr>
+        {% for spot in row %}
+        
+            <td>{{ spot }}</td>
+        
+        {% endfor %} 
+    </tr>
+    {% endfor %} 
+</table>
+</body>
+</html>
